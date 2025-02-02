@@ -115,6 +115,9 @@
     openvpn
     pkgs.gnome-tweaks
     pkgs.google-chrome
+    pkgs.python311
+    pkgs.ansible
+    pkgs.ansible-lint
   ];
 
   #enable openvpn  
