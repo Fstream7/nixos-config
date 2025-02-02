@@ -55,11 +55,12 @@
   services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
   services.displayManager.sddm.wayland.enable = true;
-  
+
   # Configure keymap in X11
   services.xserver = {
     xkb.layout = "us,ua";
-    xkb.options = "grp:ctrl_shift_toggle";  # Use Shift+Ctrl to switch
+    xkb.variant = "workman,";
+    xkb.options = "grp:win_space_toggle";
   };
 
   # Enable CUPS to print documents.
