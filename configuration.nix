@@ -6,9 +6,11 @@
 
 {
   imports =
-    [ # Include the results of the hardware scan.
+    [
+      # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./nvidia.nix
+      ./software/vscodium.nix
     ];
 
   # Bootloader.
@@ -84,8 +86,8 @@
     description = "Ivan Tkachuk";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
-    #  thunderbird
-    telegram-desktop
+      #  thunderbird
+      telegram-desktop
     ];
   };
 
@@ -98,8 +100,8 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  #  wget
+    #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    #  wget
     neovim
     atop
     lm_sensors
@@ -108,7 +110,6 @@
     openvpn
     pkgs.gnome-tweaks
     pkgs.google-chrome
-    vscodium
   ];
 
   #enable openvpn  
@@ -141,12 +142,12 @@
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "24.05"; # Did you read the comment?
 
-programs.steam = {
-  enable = true;
-  remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
-  dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
-  localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
-};
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
+    dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
+    localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
+  };
 
 
 }
