@@ -8,6 +8,7 @@ environment.systemPackages = with pkgs; [
     vscodeExtensions = with vscode-extensions; [
       jnoortheen.nix-ide
       redhat.vscode-yaml
+      ms-python.python
     ];
   })
 ];

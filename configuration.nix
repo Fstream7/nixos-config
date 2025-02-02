@@ -12,6 +12,7 @@
       ./nvidia.nix
       ./software/vscodium.nix
       ./software/steam.nix
+      ./software/1password.nix
     ];
 
   # Bootloader.
