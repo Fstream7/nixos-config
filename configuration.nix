@@ -60,7 +60,7 @@
   # Configure keymap in X11
   services.xserver = {
     xkb.layout = "us,ua";
-    xkb.options = "grp:win_space_toggle";
+    xkb.options = "grp:caps_toggle,caps:none"; # Replace caps key with keyboard layout changing hotkey
   };
 
   # Enable CUPS to print documents.
