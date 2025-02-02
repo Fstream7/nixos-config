@@ -59,7 +59,6 @@
   # Configure keymap in X11
   services.xserver = {
     xkb.layout = "us,ua";
-    xkb.variant = "workman,";
     xkb.options = "grp:win_space_toggle";
   };
 
@@ -116,12 +115,20 @@
     pkgs.gnome-tweaks
     pkgs.google-chrome
     pkgs.python311
+    python311Packages.pip
     pkgs.ansible
     pkgs.ansible-lint
+    docker
+    docker-compose
   ];
 
   #enable openvpn  
   programs.openvpn3.enable = true;
+
+  # add PATH for all users. Should replace it for my user after home manager
+  environment.variables = {
+    PATH = "$HOME/.local/bin:$PATH";
+  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
