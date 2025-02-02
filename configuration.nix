@@ -13,6 +13,7 @@
       ./software/vscodium.nix
       ./software/steam.nix
       ./software/1password.nix
+      ./software/openvpn.nix
     ];
 
   # Bootloader.
@@ -111,7 +112,6 @@
     lm_sensors
     ethtool
     git
-    openvpn
     pkgs.google-chrome
     pkgs.python311
     python311Packages.pip
@@ -121,8 +121,6 @@
     docker-compose
   ];
 
-  #enable openvpn  
-  programs.openvpn3.enable = true;
 
   # enable docker
   virtualisation.docker.enable = true;
