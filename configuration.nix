@@ -112,7 +112,6 @@
     ethtool
     git
     openvpn
-    pkgs.gnome-tweaks
     pkgs.google-chrome
     pkgs.python311
     python311Packages.pip
