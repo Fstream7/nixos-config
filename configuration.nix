@@ -88,7 +88,7 @@
   users.users.fstream = {
     isNormalUser = true;
     description = "Ivan Tkachuk";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [
       #  thunderbird
       telegram-desktop
@@ -125,10 +125,8 @@
   #enable openvpn  
   programs.openvpn3.enable = true;
 
-  # add PATH for all users. Should replace it for my user after home manager
-  environment.variables = {
-    PATH = "$HOME/.local/bin:$PATH";
-  };
+  # enable docker
+  virtualisation.docker.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
