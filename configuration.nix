@@ -51,13 +51,15 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
-  # Enable the Plasma 6 Environment.
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
-  #services.displayManager.sddm.wayland.enable = true;
+  # Enable the Plasma6 Environment.
+  services.displayManager.sddm.enable = true;
+  services.desktopManager.plasma6.enable = true;
+  services.displayManager.sddm.wayland.enable = true;
+  
   # Configure keymap in X11
   services.xserver = {
     xkb.layout = "us,ua";
+    xkb.options = "grp:ctrl_shift_toggle";  # Use Shift+Ctrl to switch
   };
 
   # Enable CUPS to print documents.
