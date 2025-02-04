@@ -13,7 +13,6 @@
       ./software/vscodium.nix
       ./software/steam.nix
       ./software/1password.nix
-      ./software/openvpn.nix
     ];
 
   # Bootloader.
@@ -113,8 +112,8 @@
     ethtool
     git
     pkgs.google-chrome
-    pkgs.python311
-    python311Packages.pip
+    pkgs.python312
+    python312Packages.pip
     pkgs.ansible
     pkgs.ansible-lint
     docker
