@@ -9,6 +9,7 @@ environment.systemPackages = with pkgs; [
       jnoortheen.nix-ide
       redhat.vscode-yaml
       ms-python.python
+      hashicorp.terraform
     ];
   })
 ];
