@@ -118,6 +118,7 @@
     pkgs.ansible-lint
     docker
     docker-compose
+    terraform
   ];
 
 
