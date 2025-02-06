@@ -114,6 +114,7 @@
     pkgs.google-chrome
     pkgs.python312
     python312Packages.pip
+    gcc
     pkgs.ansible
     pkgs.ansible-lint
     docker
