@@ -110,6 +110,7 @@
     atop
     lm_sensors
     ethtool
+    dig
     git
     pkgs.google-chrome
     pkgs.python312
