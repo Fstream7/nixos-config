@@ -121,6 +121,7 @@
     docker
     docker-compose
     terraform
+    remmina
   ];
 
 
