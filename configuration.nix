@@ -59,7 +59,10 @@
   # Configure keymap in X11
   services.xserver = {
     xkb.layout = "us,ua";
-    xkb.options = "grp:caps_toggle,caps:none"; # Replace caps key with keyboard layout changing hotkey
+    # Replace caps key with keyboard layout changing hotkey
+    # Some programs may still require caps lock, so it can be toggled with shift+caps lock
+    # Also, occasionally caps lock can turn on in some programs, so this is a way to disable it back. 
+    xkb.options = "grp:caps_toggle,caps:shift_caps_toggle"; 
   };
 
   # Enable CUPS to print documents.
