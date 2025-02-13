@@ -122,6 +122,7 @@
     docker-compose
     terraform
     remmina
+    mtr
   ];
 
 
