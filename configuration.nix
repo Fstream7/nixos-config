@@ -91,7 +91,7 @@
   users.users.fstream = {
     isNormalUser = true;
     description = "Ivan Tkachuk";
-    extraGroups = [ "networkmanager" "wheel" "docker" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" "gamemode" ];
     packages = with pkgs; [
       #  thunderbird
       telegram-desktop
