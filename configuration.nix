@@ -126,6 +126,7 @@
     terraform
     remmina
     mtr
+    kubectl
   ];
 
 
