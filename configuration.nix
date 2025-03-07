@@ -118,6 +118,7 @@
     pkgs.google-chrome
     pkgs.python312
     python312Packages.pip
+    adoptopenjdk-icedtea-web
     gcc
     pkgs.ansible
     pkgs.ansible-lint
