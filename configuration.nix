@@ -127,6 +127,8 @@
     terraform
     remmina
     mtr
+    jq
+    awscli2
     kubectl
   ];
 
