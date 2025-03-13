@@ -128,6 +128,7 @@
     remmina
     mtr
     jq
+    postman
     awscli2
     kubectl
   ];
