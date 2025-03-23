@@ -131,6 +131,7 @@
     postman
     awscli2
     kubectl
+    sqlite
   ];
 
 
