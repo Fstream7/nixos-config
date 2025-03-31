@@ -9,6 +9,8 @@ environment.systemPackages = with pkgs; [
       jnoortheen.nix-ide
       redhat.vscode-yaml
       ms-python.python
+      ms-python.flake8
+      ms-python.black-formatter
       hashicorp.terraform
     ];
   })
