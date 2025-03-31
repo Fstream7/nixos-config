@@ -11,6 +11,7 @@ environment.systemPackages = with pkgs; [
       ms-python.python
       ms-python.flake8
       ms-python.black-formatter
+      arrterian.nix-env-selector
       hashicorp.terraform
     ];
   })
