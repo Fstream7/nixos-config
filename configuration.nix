@@ -30,6 +30,10 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
+  # Disable wifi powersave
+  # it not work well for my router and intel wifi adapter.
+  networking.networkmanager.wifi.powersave = false;
+
   # Set your time zone.
   time.timeZone = "Europe/Kyiv";
 
