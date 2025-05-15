@@ -137,6 +137,7 @@
     awscli2
     kubectl
     sqlite
+    sshpass
   ];
 
 
