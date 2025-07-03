@@ -120,6 +120,7 @@
     ethtool
     dig
     git
+    git-review
     pkgs.google-chrome
     pkgs.python312
     python312Packages.pip
