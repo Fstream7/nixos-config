@@ -139,6 +139,7 @@
     kubectl
     sqlite
     sshpass
+    enpass
   ];
 
 
