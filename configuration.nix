@@ -140,6 +140,7 @@
     sqlite
     sshpass
     enpass
+    heroic
   ];
 
 
