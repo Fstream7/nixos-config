@@ -141,6 +141,9 @@
     sshpass
     enpass
     heroic
+    strongswan
+    networkmanager-l2tp
+    zoom-us
   ];
 
 
