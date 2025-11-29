@@ -29,6 +29,7 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+  services.strongswan.enable = true;
 
   # Disable wifi powersave
   # it not work well for my router and intel wifi adapter.
@@ -62,7 +63,7 @@
 
   # Configure keymap in X11
   services.xserver = {
-    xkb.layout = "us,ua";
+    xkb.layout = "lv,ua";
     # Replace caps key with keyboard layout changing hotkey
     # Some programs may still require caps lock, so it can be toggled with shift+caps lock
     # Also, occasionally caps lock can turn on in some programs, so this is a way to disable it back. 
@@ -142,7 +143,6 @@
     enpass
     heroic
     strongswan
-    networkmanager-l2tp
     zoom-us
   ];
 
@@ -172,6 +172,8 @@
   # Open DHCP and DNS ports for hotspot
   networking.firewall.allowedUDPPorts = [ 53 67 68 ];
   networking.firewall.allowedTCPPorts = [ 53 ];
+  # disable nix-managed hosts and make it manual managed for testing purposes
+  environment.etc.hosts.enable = false;
 
   # enable experimental features
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
