@@ -172,8 +172,8 @@
   # Open DHCP and DNS ports for hotspot
   networking.firewall.allowedUDPPorts = [ 53 67 68 ];
   networking.firewall.allowedTCPPorts = [ 53 ];
-  # disable nix-managed hosts and make it manual managed for testing purposes
-  environment.etc.hosts.enable = false;
+  # copy hosts, instead of symlinking it for testing purposes
+  environment.etc.hosts.mode = "0744";
 
   # enable experimental features
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
