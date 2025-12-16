@@ -141,7 +141,6 @@
     sqlite
     sshpass
     enpass
-    heroic
     strongswan
     zoom-us
   ];
