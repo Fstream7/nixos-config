@@ -149,6 +149,7 @@
     strongswan
     zoom-us
     discord
+    keepassxc
   ];
 
 
