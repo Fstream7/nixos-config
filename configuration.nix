@@ -150,6 +150,9 @@
     zoom-us
     discord
     keepassxc
+    vlc
+    deluge
+    inetutils
   ];
 
 
