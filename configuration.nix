@@ -153,6 +153,7 @@
     vlc
     deluge
     inetutils
+    xournalpp # pdf notes for study
   ];
 
 
