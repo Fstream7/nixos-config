@@ -128,8 +128,8 @@
     git
     git-review
     pkgs.google-chrome
-    pkgs.python315
-    python315Packages.pip
+    pkgs.python314
+    python314Packages.pip
     adoptopenjdk-icedtea-web
     gcc
     pkgs.ansible
