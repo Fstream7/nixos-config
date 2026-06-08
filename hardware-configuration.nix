@@ -16,7 +16,7 @@
 
   fileSystems."/" =
     {
-      device = "/dev/disk/by-uuid/eb495e10-4ae7-4441-a459-2e42f31b26d2";
+      device = "/dev/mapper/luks-b3eeaf21-050a-4323-8813-6d54824fd75f";
       fsType = "ext4";
     };
 
