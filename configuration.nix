@@ -32,6 +32,7 @@
     enable = true;
     plugins = with pkgs; [
       networkmanager-openvpn
+      networkmanager-fortisslvpn
     ];
   };
   services.strongswan.enable = true;
@@ -154,6 +155,7 @@
     deluge
     inetutils
     xournalpp # pdf notes for study
+    openfortivpn
   ];
 
   # enable docker
