@@ -156,6 +156,7 @@
     inetutils
     xournalpp # pdf notes for study
     openfortivpn
+    freelens-bin
   ];
 
   # enable docker
