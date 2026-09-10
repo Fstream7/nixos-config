@@ -138,6 +138,7 @@
     docker
     docker-compose
     terraform
+    terragrunt
     remmina
     mtr
     jq
