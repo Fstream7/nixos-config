@@ -32,7 +32,7 @@
     enable = true;
     plugins = with pkgs; [
       networkmanager-openvpn
-      networkmanager-fortisslvpn
+      # networkmanager-fortisslvpn # CVE-2026-91839
     ];
   };
   services.strongswan.enable = true;
